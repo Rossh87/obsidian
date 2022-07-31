@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "74bea99421d3b492",
+    "type": "split",
+    "children": [
+      {
+        "id": "8069d89591517907",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "List summation.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1aed5f0de3790b51",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5afc02899dadc07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87935022f058a377",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "cf9cde0056a7f833",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#insights",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8690971ee583f076",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "97210831135fa8c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "9be5aa1c54d21708",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8181e0fc1e22fb0a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "List summation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "538527ea3b9ff8b4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "List summation.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "66d6f97179ef72e9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b67950e29a98fd18",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "List summation.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8069d89591517907",
+  "lastOpenFiles": [
+    "leetcode/Combination sum.md",
+    "leetcode/First and last position of element in sorted array.md",
+    "leetcode/Rotated sorted array.md",
+    "templates/leetcode problem.md",
+    "Backtracking.md",
+    "Breadth-first search.md",
+    "Binary search.md",
+    "Depth-first search.md",
+    "Binary tree.md",
+    "Binary search tree.md"
+  ]
+}
