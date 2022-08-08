@@ -1,5 +1,5 @@
 # Binary trees
-A binary  tree is a specialization of the general [[tree]] structure, consisting of a root node, with a maximum of two child nodes.  Each child node is also limited to two children.
+A binary  tree is a specialization of the general [[Tree]] structure, consisting of a root node, with a maximum of two child nodes.  Each child node is also limited to two children.
 
 There are several (not mutually-exclusive) subshapes of binary tree:
 1. A *full* binary tree is a binary tree in which each node has either 0 or 2 children
