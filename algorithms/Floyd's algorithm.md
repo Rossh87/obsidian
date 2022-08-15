@@ -1,4 +1,5 @@
 # Floyd's algorithm
+Expansion of [[Tortoise and hare]] technique.
 
 Used to detect cycles in linked lists.
 
@@ -9,4 +10,4 @@ If a loop exists, imagine `x` as the distance from start to beginning of cycle, 
 	2. `fast` has moved `x + y + z + y`, or `2y + x + z`
 	3. Since `fast` and `slow` have been incremented the same number of times, and `fast` is moving twice the speed of `slow`,  `2y + x + z = 2(x + y)` 
 	4. This expression simplifies to to `x = z`
-	5. So, we can move slow back to the start, and increment it along with `fast` on place at a time.  After `z` moves, each will point to the start of cycle.
+	5. So, we can move slow back to the start, and increment it along with `fast` one place at a time.  After `z` moves, each will point to the start of cycle.

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "leetcode/Linked list cycle II.md",
+            "file": "leetcode/Course schedule.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "leetcode/Linked list cycle II.md",
+                "file": "leetcode/Course schedule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "leetcode/Linked list cycle II.md",
+                "file": "leetcode/Course schedule.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "leetcode/Linked list cycle II.md"
+                "file": "leetcode/Course schedule.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "82ba3d7826d0db93",
   "lastOpenFiles": [
-    "Floyd's algorithm.md",
-    "leetcode/Linked list cycle II.md",
-    "leetcode/Word break.md",
-    "Backtracking.md",
-    "Hashset or map.md",
+    "Kahn's algorithm.md",
+    "Depth-first search.md",
+    "attachments/Topological-Sorting-1.png",
+    "attachments/Topological-Sorting-1 1.png",
+    "Topological-Sorting-1.png",
     "List summation.md",
-    "leetcode/Combination sum.md",
-    "leetcode/First and last position of element in sorted array.md",
-    "leetcode/Rotated sorted array.md",
-    "templates/leetcode problem.md"
+    "Topological sorting.md",
+    "leetcode/Binary tree right side view.md",
+    "leetcode/Maximum product subarray.md",
+    "Kadane's algorithm.md"
   ]
 }

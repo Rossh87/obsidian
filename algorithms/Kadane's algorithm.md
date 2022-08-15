@@ -1,0 +1,6 @@
+# Kadane's algorithm
+At it's core, Kadane's algorithm is a simple observation about contiguous lists:  for a given binary operation, the result for a given list up to position `i` is either `bin_op(bin_op(i - 1), i)` or `i`.  By tracking the result of previous computations, we can determine many things about contiguous subsets of a list in O(N) time and O(1)  memory.
+
+One of the simplest operators to work this is `sum`.  Given a list, we can determine the maximum that can be derived by summing a contiguous sublist of the list using Kadane's algorithm: we simply track highest contiguous sum up to `i-1` and compare the result to the value at `i`, accepting whichever is greater and saving that result to be used for the next computation.
+
+Other operations (e.g. product) can also be performed, but in some cases we may need to track more information about the previous calculation.  For example, to get the maximum contiguous product, we need to track the largest **and** smallest values possible for each position, in order to account for negative items.
