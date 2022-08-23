@@ -1,0 +1,7 @@
+# Quicksort
+
+Very common divide-and-conquer algorithm, particularly useful for partial sorting and for sorting arrays in-place.
+
+Fully sorting takes O(N log N) average, but worst case is O(N^2).  Performance depends on the pivot; if first or last element is always selected as the pivot, and the array is already sorted, or only contains all of the same element (which is a special case of being sorted, actually), performance will be O(N^2), since one partition will be empty on each recursive partitioning, and we will walk the whole partition each time , since every element will be greater/less than the pivot.  This can be mitigated by randomizing pivot selection, although in this case it is still possible to get unlucky.  A more mathematically sure approach is to do select the median element each partition as the pivot, which can be done in O(N), and this guarantees O(N log N) performance.  In practice this is never implemented, since the added hidden constants of this approach are much higher than normal selection sort.
+
+Quicksort is particularly efficient for partial sorting problems, like retrieving the K largest or smallest elements from an unsorted list.  Once we've placed a pivot with the appropriate number of items above or beneath it (depending on whether we want smallest or largest elements), there's no need to partion the other side of the array.  Expected performance for this method is O(N + K log K), though it is still possible for poor pivot selection to make performance much worse.

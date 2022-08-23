@@ -1,0 +1,10 @@
+# Bounding functions
+Bounding functions (e.g. `lower_bound`, `upper_bound`) use [[Binary search]] to give us the position of a new element in a pre-sorted array.  Because they use binary search, they do so in O(log N) time, but sortedness of the array must be guaranteed.
+
+Lower bound gives us the position of the first element in the existing array that is NOT LESS THAN the target element.  This means that, if there are duplicates and the target value is one of them, lower bound will give us the leftmost position that contains the target value in the current array.  It CAN return array.length if the target is larger than every element in the existing array.
+
+Upper bound gives us the position of the first element that is GREATER THAN the target.  It will never return a position that already contains the target in the sorted array.
+
+These functions are useful when we want to add a stream of incoming elements to an already-sorted structure.  For N elements to be inserted, time complexity will be O(N log N), as opposed to O(N * N log N) to re-sort the array after every insertion.
+
+To get the boundary conditions correct in the binary searching algorithm, think about the criteria that rule an element in or out of being a potential solution, and apply them to the mid element.  For example, to obtain a lower bound we want the smallest element that is `>=` the target.  So if mid is `>=` the target, the answer is *either*  the middle, or some earlier index, and we move the range ceiling to mid.  If mid is `<` the target, we know that neither mid nor anything left of mid can be the answer, so we rule mid out by raising the range floor to mid + 1.  Same logic applies to upper bound with mid-inclusion conditions tweaked: if mid `<=` target, neither mid nor anything to its left can be the answer, so we rule it out by raising the floor to mid + 1.  If mid `>` the target, mid **can** still be the answer, so we keep it in, and lower the ceiling to mid, since we know we'll never need anything bigger than mid.

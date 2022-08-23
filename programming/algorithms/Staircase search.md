@@ -1,0 +1,3 @@
+# Staircase search
+
+Useful in a 2D matrix where rows are sorted from left to right, and cols are sorted top to bottom, but matrix as a whole is not necessarily sorted.  We can start at max column of least row, and since every col to the left of that position is necessarily smaller, we can exclude the row if current value is too small.  Continue this until we find a row whose maximum value > the target.  Then work backwards through cols until we either find the target, or encounter an element that is too small and have to go down another row.
