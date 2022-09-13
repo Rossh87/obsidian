@@ -9,47 +9,57 @@ Insights:
 1. Since robot can only move down or to the right, the number of unique paths to position \[row, col\]  is uniquePaths(row - 1, col) + uniquePaths(row, col - 1)
 
 Notes:
-Straightforward once we identify the three base cases:
-1. top-left square, i.e. no movement, has exactly 1 unique path to itself
-2. \[0, 1\] has exactly one unique path to itself (1 move to right from start)
-3. \[1, 0\] has exactly one unique path to itself (1 move down from start)
+Straightforward once we identify the base case:
+top-left square, i.e. no movement, has exactly 1 unique path to itself.
+
+Iterative approach makes it easier to realize that time and space complexity are O(m * n)
 
 Solution:
 ```javascript
-const toKey = (row, col) => `${row},${col}`;
-
 var uniquePaths = function(m, n) {
-    const idx = new Map()
-    idx.set(toKey(0, 1), 1)
-    idx.set(toKey(1, 0), 1)
-//     'no moves' = 1 unique path
-    idx.set(toKey(0, 0), 1)
+    const idx = new Map();
     
-    const uniqueCount = (row, col) => {
+    idx.set('0,0', 1);
+    
+    const up = (row, col) => {
+        const existing = idx.get(`${row},${col}`);
         
-        const existing = idx.get(toKey(row, col));
+        if(existing !== undefined) return existing;
         
-        if(typeof existing === 'number'){
-            return existing;
-        }
-        
-        let total = 0;
+        let sum = 0;
         
         if(row - 1 >= 0){
-            const sub1 = uniqueCount(row - 1, col);
-            idx.set(toKey(row - 1, col), sub1);
-            total += sub1
+            sum += idx.get(`${row - 1},${col}`) || up(row - 1, col);
         }
         
         if(col - 1 >= 0){
-            const sub2 = uniqueCount(row, col - 1);
-            idx.set(toKey(row, col - 1), sub2);
-            total += sub2;
+            sum += idx.get(`${row},${col - 1}`) || up(row, col - 1);
         }
         
-        return total;
+        idx.set(`${row},${col}`, sum);
+        
+        return sum;
     }
     
-    return uniqueCount(m - 1, n - 1)
+    return up(m - 1, n - 1);
+};
+
+var uniquePaths = function(m, n) {
+    const idx = Array(m).fill(null).map(() => Array(n).fill(0));
+    
+    idx[0][0] = 1;
+    
+    for(let row = 0; row < idx.length; row++){
+        for(let col = 0; col < idx[0].length; col++){
+            if(idx[row][col] !== 0) continue;
+            
+            const above = row - 1 < 0 ? 0 : idx[row - 1][col];
+            const left = col - 1 < 0 ? 0 : idx[row][col - 1];
+            
+            idx[row][col] = above + left;
+        }
+    }
+    
+    return idx[m - 1][n - 1];
 }
 ```

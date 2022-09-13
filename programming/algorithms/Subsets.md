@@ -3,8 +3,8 @@
 Getting all possible subsets of a group of elements is deceptively simple.  We begin with a solution for the simplest case, which is the empty set (unit)--a subset of all other sets.  In principle, the set of all subsets for the group K, with added element I, is the 
  combination of all subsets of K and the set of subsets formed by adding I to each subset of K.  So for the group of elements `[1]`, all possible subsets are made by combining all the subsets of `[]`, and all the subsets formed by adding `1`  to all the subsets of `[]`.  Thus, `subsets([1]) = [[], [1]]`.
 
-General implementation:
-```
+Iterative implementation:
+```javascript
 // Given a list of unique elements 'nums'
 var subsets = function(nums) {
     const result = [[]];
@@ -26,6 +26,27 @@ var subsets = function(nums) {
 }
 ```
 
-Note that this could also be done top-down, recursively, since subsets(n) can be programatically derived from subsets(n - 1).
+The recursive implementation of this problem is useful for any problem where we need to try all combinations of something.  In each recursive layer, we branch once while *taking* the current element, and again without taking it.  Note that below, the sets are **true** `sets`, in the since that all elements are unique within each set, but the [[Backtracking]] approach below does not require that constraint to be useful.  Combine with [[Dynamic programming]] to prune branches of the search tree and remove needless recursion whenever possible, as this approach runs in exponential time.
 
-[[Time complexity]] of subset derivation is O(2 ^ (N - 1))
+```javascript
+var subsets = function(nums) {
+    const result = [];
+    
+    const bt = (idx, partial) => {
+        if(idx === nums.length){
+            result.push(partial.slice());
+            return;
+        }
+        
+        partial.push(nums[idx]);
+        bt(idx+1, partial);
+        partial.pop();
+        bt(idx+1, partial);
+    }
+    
+    bt(0, []);
+    
+    return result;
+}
+```
+

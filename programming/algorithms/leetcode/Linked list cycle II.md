@@ -12,11 +12,12 @@ Insights:
 	2. `fast` has moved `x + y + z + y`, or `2y + x + z`
 	3. Since `fast` and `slow` have been incremented the same number of times, and `fast` is moving twice the speed of `slow`,  `2y + x + z = 2(x + y)` 
 	4. This expression simplifies to to `x = z`
-	5. So, we can move slow back to the start, and increment it along with `fast` on place at a time.  After `z` moves, each will point to the start of cycle, and we have our answer.
+	5. So, we can move slow back to the start, and increment it along with `fast` one place at a time.  After `z` moves, each will point to the start of cycle, and we have our answer.
 	
 	
 
 Notes:
+The hardest part of these tortoise/hare problems is the setup:  we have to make sure fast and slow are incremented once before we check for their equality.  Doing this inside the `while` loop is the easiest way I've found.
 
 Solution:
 ```javascript

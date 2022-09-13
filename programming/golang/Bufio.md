@@ -1,0 +1,3 @@
+# Bufio
+
+`Bufio` exists to bridge the gap between `io` operations that implement the `Writer` interface, but may be slow to write, and logic that needs to perform many writes.  For example, when writing a string to disk, we would not want to call `Write` on the file with each string rune.  `Bufio` implements a "high water mark" for us that holds input in-memory until the buffer is full, then calls `Write` on the real `Writer` with all the buffered data, saving many potentially expensive `Write` calls.
