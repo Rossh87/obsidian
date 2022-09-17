@@ -1,0 +1,3 @@
+QUIC (a name, not an acronym...) is a transport-layer protocol primarily intended to address the shortcomings of [[TCP]] for handling HTTP requests:
+- Security: QUIC is always encrypted via TLS.  Along with the security benefits, encrypted data is opaque to intermediate hardware between client and server, preventing them from interfering due to the content of the data.
+- Performance:  the major shortcoming of [[HTTP 2]] is that is fails to address head-of-line blocking in the TCP layer on connections with high rates of packet loss.  QUIC essentially does at the transport layer what [[Http multiplexing]] does at the data layer: by creating multiple logical streams of packets, the loss of a packet associated with one stream does not block other streams.

@@ -4,9 +4,12 @@ URL: https://leetcode.com/problems/search-a-2d-matrix-ii/
 
 Categories:
 1. [[Staircase search]]
+2. [[Binary search]]
 
 Insights:
-1. If rightmost element of a row is too small, we know we have to go down 1 row.  Otherwise, go back a column.
+1. Basic staircase: If rightmost element of a row is too small, we know we have to go down 1 row.  Otherwise, go back a column.  This uses `O(M + N)` time.
+2. With binary searching: for max efficiency, iterate `min(M, N)` times on the diagonal, performing binary search from `i` to the end on both the row and the column
+3. The general insight is that, if a given cell is too large, **all** cells below and to the right of it will also be too large.  
 
 Notes:
 

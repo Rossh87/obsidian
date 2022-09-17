@@ -1,6 +1,8 @@
 # Subsets
 
-Getting all possible subsets of a group of elements is deceptively simple.  We begin with a solution for the simplest case, which is the empty set (unit)--a subset of all other sets.  In principle, the set of all subsets for the group K, with added element I, is the 
+The number of possible subsets that can be formed from a set of size `N` is 2 ^ `N`.  Intuitively, for any given subset, each member of the superset can either be *in* or *out* (i.e. 2 possibilities), giving a formula of `2 * 2 * ...`.
+
+Iterative appreach: begin with a solution for the simplest case, which is the empty set (unit)--a subset of all other sets.  In principle, the set of all subsets for the group K, with added element I, is the 
  combination of all subsets of K and the set of subsets formed by adding I to each subset of K.  So for the group of elements `[1]`, all possible subsets are made by combining all the subsets of `[]`, and all the subsets formed by adding `1`  to all the subsets of `[]`.  Thus, `subsets([1]) = [[], [1]]`.
 
 Iterative implementation:

@@ -1,0 +1,6 @@
+- Serves as the [[TCP]] re-use protocol in [[Http 2]]
+- Addresses the Head-of-line blocking issues with [[Http 1.1]] pipelining: in pipelining, the server must respond in the order requests were sent.  This is a severe bottleneck if the first sent request is 'heavy'.  Multiplexing allows responses to be sent in any order, alleviating this issue.
+- In practice, pipelining was rarely implemented in Http 1.1; while multiplexing is part of the Http 2 standard
+- Note that, in the case of a web page that requests resources from multiple hosts, browsers still limit the number of open TCP connections to a single host, as well as the total number of open connections.  [The exact number varies](https://ishwar-rimal.medium.com/why-does-your-browser-limit-the-number-of-concurrent-network-calls-1ae5d50863dd)So for a webpage that requests resources from dozens of hosts, TCP connections could still be a performance bottleneck.
+
+This is possible because of the frame-based communication is based on: collections of bytes, called frames, are each associated with a frame type and a stream number.  Each stream corresponds to a coherent request or response.  This allows pieces of different responses to be sent in any order, with any timing, over the same TCP connection, and correctly re-assembled by the client.
