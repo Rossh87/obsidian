@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "algorithms/leetcode/Search a 2D matrix II.md",
+            "file": "algorithms/Subarrays.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/leetcode/Search a 2D matrix II.md",
+                "file": "algorithms/Subarrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/leetcode/Search a 2D matrix II.md",
+                "file": "algorithms/Subarrays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/leetcode/Search a 2D matrix II.md"
+                "file": "algorithms/Subarrays.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "c5106f53331749e0",
   "lastOpenFiles": [
-    "networking/QUIC.md",
-    "networking/Http 2.md",
-    "networking/Http multiplexing.md",
-    "networking/Http 3.md",
-    "networking/Server push.md",
-    "networking/Chunked transfer encoding.md",
-    "networking/Http 1.1.md",
-    "networking/Http 1.0.md",
-    "networking/TLS or SSL.md",
-    "algorithms/Union find.md"
+    "algorithms/Rolling hash.md",
+    "algorithms/leetcode/Repeated DNA sequences.md",
+    "algorithms/leetcode/Path sum III.md",
+    "algorithms/Prefix sum.md",
+    "algorithms/leetcode/Partition equal subset sum.md",
+    "algorithms/Knapsack problem.md",
+    "patterns/Proxy.md",
+    "patterns/Modules.md",
+    "algorithms/Dynamic programming.md",
+    "algorithms/leetcode/Kth smallest element in a sorted matrix.md"
   ]
 }

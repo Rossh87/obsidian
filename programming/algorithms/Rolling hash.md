@@ -1,0 +1,9 @@
+Maintaining an updatable hash of a given input string is a useful technique for identifying duplicate strings when the pattern of potential duplicates is not known beforehand.  The steps to calculate/update such a hash are as follows:
+1. Identify the number of unique characters in the input string.  For an `ASCII` string, this could  be 256.  If we know there are e.g. 4 characters (A,C,T,G for DNA), use 4.  This becomes the base in which we will calculate the hash.
+2. Assign each distinct character a value within the range of the base.  We could use the unique `charCode`, or assign arbitrary integer values.
+3. Pick any length for a 'window' over the input string.
+4. The initial value of the hash is `0`.  To populate the hash for the window beginning at index 0 of the input string, for each successive character within the window, left-shift the hash by multiplying it by the base, then add the appropriate integer value for the current character
+5. When the initial window is populated, we begin sliding to the right.  Left-shift by multiplying by base, then *subtract* the left-most value by subtracting the simple integer value of the dropped character multiplied by `base ^ windowWidth`.  Finally, add the simple integer value of the new character.
+6. Store each calculated hash in a `Set` or `Map`.  If we encounter a hash that we've already stored, the substring represented by the current hash is a duplicate.
+
+Note that this approach is suboptimal when the pattern or patterns are known beforehand.  However, if the aim is to detect patterns (e.g. duplicates) that are unknown, it works extremely well.
