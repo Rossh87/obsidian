@@ -1,0 +1,5 @@
+Services are considered to be `providers`--they provide data or behaviors that other components or services consume.  
+
+**Where** a provider is provided from can be specified *either* in the `@Injectable` metadata in the `providedIn` property (requires an `NgModule`, the string `root`, or the string `any` as value), or in the `providers` metadata passed to `@NgModule`.  If a provider is to be provided by a module other than `root`, it is preferable to specify in the *service* rather than the module (i.e. in `providedIn` of `@Injectable`), to enable tree-shaking if the service is never actually injected.
+
+If a provider is provided in `root`, it will be a singleton, constructed the first time a component that injects it is created, and shared by all subsequent consumers.  If a singleton is not desired, the provider can specify a module to be provided from.  In that case, any module that imports the providing module will get its own instance of the provider.

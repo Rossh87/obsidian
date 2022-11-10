@@ -1,0 +1,5 @@
+- Runs in a single process
+- Parts may be tightly coupled
+- Possibly legacy tech/language
+- Individual app functions cannot be scaled independently.  To horizontally scale, an instance of the whole app must be created/deployed
+- Availability is a challenge 

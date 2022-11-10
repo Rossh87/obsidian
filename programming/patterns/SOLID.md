@@ -1,0 +1,7 @@
+1. Single responsibility principle: a class (or code unit, in general, anything that presents an interface to the code around it), should have only one reason to change.
+2. Open-close principle: open for extension, closed for modification.  Things like inheritance (blech) or polymorphic interfaces (yay!) make this easier.  General idea is we don't want to be changing existing code when we add behaviors.
+3. Liskov substitution principle: derived classes should be substitutable for parent class.  Illustrative failure case: class `Square` should not inherit from `Rectangle`, because there is a good chance the implementations are not interchangeable.  `Square` should set `width`  AND `height` whenever `setWidth` *or* `setHeight` is called, but `Rectangle` needs them called independently.  Consumers of the interface are likely to call it incorrectly in certan cases.
+4. Interface segregation principle: have lots of smaller interface, not fewer big ones.  Classes can implement multiple smaller interfaces as needed.
+5. Dependency inversion principle: depend on abstractions, not concretions.  Abstractions determine implementation, not the other way around. 
+
+Limitations:  It's more code.  Can lead toward premature abstraction.  Can conflict with YAGNI. Slower.

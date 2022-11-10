@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "b81d2649ddf8e6cc",
+        "id": "73273072c4ffbee5",
         "type": "tabs",
         "children": [
           {
-            "id": "5db458836abbdcc2",
+            "id": "5ce7eb238248d7a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms/leetcode/Is Subsequence.md",
+                "file": "K8S/Features overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4cd4d48d86bbc7aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8S/K8S architecture.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9f7642d41a542227",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8S/Control Plane Agent.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "387229deca7cdb46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8S/etcd.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms/leetcode/Is Subsequence.md",
+                "file": "K8S/etcd.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms/leetcode/Is Subsequence.md",
+                "file": "K8S/etcd.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms/leetcode/Is Subsequence.md"
+                "file": "K8S/etcd.md"
               }
             }
           }
@@ -136,20 +173,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "5db458836abbdcc2",
+  "active": "541efefd84d3083b",
   "lastOpenFiles": [
-    "algorithms/Iteration.md",
-    "algorithms/leetcode/Is Subsequence.md",
-    "algorithms/List summation.md",
-    "algorithms/Knapsack problem.md",
-    "algorithms/Kahn's algorithm.md",
-    "databases/Overview.md",
-    "databases/online analytical processing (OLAP).md",
-    "online transaction processing (OTAP).md",
-    "No-SQL.md",
-    "networking/CAP theorem.md"
+    "K8S/Control Plane Agent.md",
+    "K8S/Control Plane Node.md",
+    "K8S/K8S architecture.md",
+    "K8S/Features overview.md",
+    "angular/Module.md",
+    "K8S/Deployment.md",
+    "K8S/Container orchestration.md",
+    "patterns/SOLID.md",
+    "K8S/Monolith.md",
+    "angular/Declarable.md"
   ]
 }
