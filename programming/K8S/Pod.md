@@ -1,0 +1,1 @@
+A pod is just a group of containers that work together to create a single application or service.  Think of a `docker-compose` file.
