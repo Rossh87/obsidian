@@ -4,40 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "dcc3da87832def68",
+        "id": "ee217b4fd1d27f60",
         "type": "tabs",
         "children": [
           {
-            "id": "b3dda39b59fc73e7",
+            "id": "a171d39b52f53a75",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "networking/Containers.md",
+                "file": "networking/OSI Model.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "de52f72c140971bb",
+            "id": "e49f3ba605467300",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8S/Selector.md",
+                "file": "networking/TCP.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "53dbb3ce96af5163",
+            "id": "5039850aacc4edc8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8S/Service.md",
+                "file": "networking/OSI Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "K8S/Service.md",
+                "file": "networking/OSI Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "K8S/Service.md",
+                "file": "networking/OSI Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "K8S/Service.md"
+                "file": "networking/OSI Model.md"
               }
             }
           }
@@ -161,17 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "53dbb3ce96af5163",
+  "active": "5039850aacc4edc8",
   "lastOpenFiles": [
-    "K8S/Permissions.md",
-    "K8S/Service.md",
-    "K8S/Networking.md",
-    "K8S/Selector.md",
-    "networking/iptables.md",
+    "networking/UDP.md",
+    "networking/TCP.md",
+    "networking/OSI Model.md",
     "networking/Containers.md",
-    "algorithms/Dynamic programming.md",
-    "K8S/Control Plane Node.md",
-    "K8S/Pod.md",
-    "K8S/ReplicaSet.md"
+    "K8S/Selector.md",
+    "2022-11-19.md",
+    "K8S/Service.md",
+    "K8S/Permissions.md",
+    "K8S/Networking.md",
+    "networking/iptables.md"
   ]
 }
