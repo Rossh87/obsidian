@@ -4,47 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "22f52cda15254593",
+        "id": "dcc3da87832def68",
         "type": "tabs",
         "children": [
           {
-            "id": "e6a38f47078b3f2b",
+            "id": "b3dda39b59fc73e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8S/K8S architecture.md",
+                "file": "networking/Containers.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6e33f24e071d6abb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "K8S/Networking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2567fcf761d2915f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "K8S/kube-proxy.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fccc3c0ed6426aca",
+            "id": "de52f72c140971bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "53dbb3ce96af5163",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8S/Service.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "K8S/Networking.md",
+                "file": "K8S/Service.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "K8S/Networking.md",
+                "file": "K8S/Service.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "K8S/Networking.md"
+                "file": "K8S/Service.md"
               }
             }
           }
@@ -173,17 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6e33f24e071d6abb",
+  "active": "53dbb3ce96af5163",
   "lastOpenFiles": [
-    "K8S/Selector.md",
-    "K8S/kube-proxy.md",
+    "K8S/Permissions.md",
     "K8S/Service.md",
     "K8S/Networking.md",
-    "angular/Service.md",
+    "K8S/Selector.md",
+    "networking/iptables.md",
+    "networking/Containers.md",
+    "algorithms/Dynamic programming.md",
+    "K8S/Control Plane Node.md",
     "K8S/Pod.md",
-    "K8S/K8S architecture.md",
-    "K8S/Worker Nodes.md",
-    "K8S/kubelet.md",
-    "K8S/Container Runtime.md"
+    "K8S/ReplicaSet.md"
   ]
 }

@@ -1,0 +1,1 @@
+K8S objects declare key-value pairs, or labels to enable grouping and selecting of objects.  Objects can declare multiple labels.  When selecting objects, we can use either equality-based selection, or set-based selection.  For set-based selection, we use either `in/non-in` operators for label values, or `exists/not-exists` for label keys.
