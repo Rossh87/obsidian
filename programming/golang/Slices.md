@@ -27,7 +27,7 @@ s = [2:4]
 s = [:6]
 //PANIC--slicing beyond capacity.
 ```
-This happens because slicing does not copy any data.  A slice is only a description of a certain array segment, consisting of a length, a capacity, and crucially a *pointer* to the first array element.  When the pointer is advanced, the head of the linked array data is lost, and the capacity of the slice and underlying array are diminished. 
+This happens because slicing does not copy any data.  A slice is only a description of a certain array segment, consisting of a length, a capacity, and crucially a *pointer* to the first array element that is a member of the slice.  When the pointer is advanced, the head of the linked array data is lost, and the capacity of the slice and underlying array are diminished. 
 
 The zero value of a slice is `nil`. A slice initialized like this:
 ```go
@@ -45,3 +45,7 @@ creates a slice of length 5, whose underlying array is of length and capacity 5,
 `append`ing to a slice silently handles the capacity of the underlying array for us.  If an append is requested that would exceed the capacity of the existing array, a new, longer array is created, the contents of the old array are copied, and a reference to the new array is returned. `append` increases capacity exponentially to avoid excessive reallocations as the array grows in size.
 
 One potential gotcha with this implementation of slices is that, if a slice's backing array is very large, it will be persisted in memory for the life of the slice that looks into it.  Prevent this by creating a new slice of only the needed length and capacity, and copying the offending slice into it.
+
+## Memory Management and Slices
+
+When creating slices, it is important to remember that the backing array cannot be garbage collected for the life of the derived slice(s).  However, if the array contains elements whose values are stored **elsewhere** in memory, that external memory can be released by zeroing out the unused indices of the array.  Pointers, strings, and structs or maps with pointer or string fields are all examples of array members that should be zeroed or set to `nil` on indices that are no longer used. 
