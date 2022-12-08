@@ -1,0 +1,3 @@
+Element whose representation is outside the scope of CSS.  Prime example is `<img>`: the browser (usually) draws the element's content based on the contents of a bitmap; no CSS can affect the image's appearance.
+
+While CSS generally cannot alter the appearance of a replaced element's content, CSS properties `object-fit` and `object-position`  can affect how the replacement content is positioned within the element's box.
