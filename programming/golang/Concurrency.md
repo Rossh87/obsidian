@@ -12,7 +12,7 @@ go f(x, y, z)
 
 In the above snippet, the *values* of `f, x, y, and z` are evaluated in the current goroutine, but `f`  is *executed* in a new goroutine.
 
-Goroutines all operate on the same address space, so some mechanism for memory safety is required when multiple routines operate on shared data.
+By default, the Go runtime operates on a single OS thread, using a single logical processor (although this can be changed by setting `runtime.GOMAXPROCS`). Because of this, goroutines all operate on the same address space, so some mechanism for memory safety is required when multiple routines operate on shared data.
 
 ## Channels
 Channels are a self-coordinating mechanism for orchestrating goroutines.  By default, an input instruction to a channel will block the current thread until the channel is able to receive the input, and an extract instruction from a channel will block until the data is ready to be extracted
@@ -80,9 +80,9 @@ type SafeCounter struct {
 // Inc increments the counter for the given key.
 func (c *SafeCounter) Inc(key string) {
 	c.mu.Lock()
+	defer c.mu.Unlock()
 	// Lock so only one goroutine at a time can access the map c.v.
 	c.v[key]++
-	c.mu.Unlock()
 }
 
 // Value returns the current value of the counter for the given key.
@@ -99,6 +99,7 @@ func main() {
 		go c.Inc("somekey")
 	}
 
+	// wait for all goroutines to finish
 	time.Sleep(time.Second)
 	fmt.Println(c.Value("somekey"))
 }

@@ -44,7 +44,7 @@ creates a slice of length 5, whose underlying array is of length and capacity 5,
 
 `append`ing to a slice silently handles the capacity of the underlying array for us.  If an append is requested that would exceed the capacity of the existing array, a new, longer array is created, the contents of the old array are copied, and a reference to the new array is returned. `append` increases capacity exponentially to avoid excessive reallocations as the array grows in size.
 
-One potential gotcha with this implementation of slices is that, if a slice's backing array is very large, it will be persisted in memory for the life of the slice that looks into it.  Prevent this by creating a new slice of only the needed length and capacity, and copying the offending slice into it.
+One potential gotcha with this implementation of slices is that, if a slice's backing array is very large, it will be persisted in memory for the life of the slice that looks into it.  Prevent this by creating a new slice of only the needed length and capacity, and copying the offending slice into it manually or by using the builtin `copy` function.
 
 ## Memory Management and Slices
 

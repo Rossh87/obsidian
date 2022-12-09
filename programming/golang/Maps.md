@@ -1,6 +1,6 @@
 # Maps
 
-Like [[Slices]] and pointers, maps are a reference type, so the zero value of a map is nil.  A `nil` map has no keys, and no keys can be added to it.
+Like [[Slices]] and pointers, the zero value of a map is nil.  A `nil` map has no keys, and no keys can be added to it. Under the hood, [a map is a pointer to an instance of `runtime.hmap`](https://dave.cheney.net/2017/04/30/if-a-map-isnt-a-reference-variable-what-is-it).  However, it cannot be dereferenced.
 
 We can get a nil map like this:
 ```go
