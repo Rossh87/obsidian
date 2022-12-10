@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "271e9b91f9ad5b8d",
+        "id": "04072236d4465397",
         "type": "tabs",
         "children": [
           {
-            "id": "bfedee08cf34a463",
+            "id": "3805172308a3a59e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "networking/Websockets.md",
+                "file": "networking/Protocol Buffers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b724602eaf3d0c68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "networking/TLS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "830846d2a0a5e19b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "css/Media Queries.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sliding",
+                "query": "tls",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "networking/Websockets.md",
+                "file": "css/Media Queries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "networking/Websockets.md",
+                "file": "css/Media Queries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "networking/Websockets.md"
+                "file": "css/Media Queries.md"
               }
             }
           }
@@ -136,17 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bfedee08cf34a463",
+  "active": "830846d2a0a5e19b",
   "lastOpenFiles": [
+    "networking/TLS.md",
+    "networking/Protocol Buffers.md",
+    "networking/gRPC.md",
+    "networking/Chunked transfer encoding.md",
+    "networking/TCP.md",
+    "networking/Server push.md",
+    "networking/Websockets.md",
     "algorithms/Rolling hash.md",
     "golang/Panic recovery.md",
-    "golang/Slices.md",
-    "golang/Maps.md",
-    "golang/Concurrency.md",
-    "golang/Pointers.md",
-    "golang/Modules.md",
-    "css/Selectors.md",
-    "2022-11-19.md",
-    "networking/Protocol Buffers.md"
+    "golang/Slices.md"
   ]
 }
