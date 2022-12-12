@@ -19,4 +19,9 @@ Available authentication strategies include:
 
 Multiple authentication modules can be enabled, and the first to match the request short-circuits the rest.  It is suggested to have at least two modules enables: the service account tokens authenticator, and one other user auth method.
 
-Authorization is similar to authentication: different modules are supported, and the first module to reach an authorization decisiona about a request short-circuits the others.
+Authorization is similar to authentication: different modules are supported, and the first module to reach an authorization decision about a request short-circuits the others.
+
+There are 3 authorization modes:
+1. [[Attribute-Based Access Control]]
+2. [[Webhooks]]
+3. [[Role-Based Access Control]]

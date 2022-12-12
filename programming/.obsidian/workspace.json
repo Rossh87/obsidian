@@ -4,47 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "04072236d4465397",
+        "id": "42883cf28f8d2d51",
         "type": "tabs",
         "children": [
           {
-            "id": "3805172308a3a59e",
+            "id": "643cc57fb0d4b0fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "networking/Protocol Buffers.md",
+                "file": "K8S/API Server.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b724602eaf3d0c68",
+            "id": "2005fc76337c98d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "networking/TLS.md",
+                "file": "K8S/Role-Based Access Control.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "830846d2a0a5e19b",
+            "id": "7fcd0b503537a0ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "css/Media Queries.md",
+                "file": "K8S/Attribute-Based Access Control.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "css/Media Queries.md",
+                "file": "K8S/Role-Based Access Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "css/Media Queries.md",
+                "file": "K8S/Role-Based Access Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "css/Media Queries.md"
+                "file": "K8S/Role-Based Access Control.md"
               }
             }
           }
@@ -161,17 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "830846d2a0a5e19b",
+  "active": "541efefd84d3083b",
   "lastOpenFiles": [
-    "networking/TLS.md",
-    "networking/Protocol Buffers.md",
-    "networking/gRPC.md",
-    "networking/Chunked transfer encoding.md",
-    "networking/TCP.md",
-    "networking/Server push.md",
+    "K8S/Permissions.md",
+    "K8S/Attribute-Based Access Control.md",
+    "K8S/RBAC.md",
+    "K8S/Role-Based Access Control.md",
+    "K8S/API Server.md",
+    "K8S/Context.md",
+    "cache poisoning.md",
     "networking/Websockets.md",
-    "algorithms/Rolling hash.md",
-    "golang/Panic recovery.md",
-    "golang/Slices.md"
+    "networking/VPN.md",
+    "networking/UDP.md"
   ]
 }
