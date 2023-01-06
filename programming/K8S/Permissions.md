@@ -25,3 +25,5 @@ There are 3 authorization modes:
 1. [[Attribute-Based Access Control]]
 2. [[Webhooks]]
 3. [[Role-Based Access Control]]
+
+After an API request has been authenticated and authorized, it will also pass through [[Admission Controller]]s.

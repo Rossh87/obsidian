@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e2047f69b48766b7",
+        "id": "3739f8bc5dc036d7",
         "type": "tabs",
         "children": [
           {
-            "id": "ce30b245ad02cba2",
+            "id": "c1849b4487bae294",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "K8S/Volume.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tls",
+                "query": "iptables",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "K8S/Volume.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "K8S/Volume.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "K8S/Volume.md"
+              }
             }
           }
         ]
@@ -128,17 +136,27 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ce30b245ad02cba2",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "541efefd84d3083b",
   "lastOpenFiles": [
-    "golang/Pointer.md",
-    "golang/Escape Analysis.md",
-    "algorithms/A* Pathing.md",
-    "algorithms/Dijkstra's algorithm.md",
-    "computing/Threads.md",
-    "K8S/API Server.md",
+    "K8S/Service.md",
+    "K8S/Service Discovery.md",
+    "K8S/Health Probes.md",
+    "K8S/kube-proxy.md",
     "K8S/Permissions.md",
-    "K8S/Attribute-Based Access Control.md",
-    "K8S/RBAC.md",
-    "K8S/Role-Based Access Control.md"
+    "K8S/Operating System.md",
+    "K8S/etcd.md",
+    "K8S/Networking.md",
+    "networking/Containers.md",
+    "K8S/Admission Controller.md"
   ]
 }

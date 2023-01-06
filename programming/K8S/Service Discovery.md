@@ -1,0 +1,3 @@
+Applications running in a [[Pod]] need to be able to find network routing information for [[K8S/Service]]s at runtime.  The process by which this happens is called **Service Discovery**.  There are two ways an application can discover an available service:
+1. [[kubelet]] programmatically adds environment variables to the pod (container?) environments for all services that are active at the time of pod creation.  This is order-sensitive: services added to the cluster *after* a pod is created will not be injected into its environment.
+2. The recommended approach is to use K8S DNS add-on.  This way pods can look up services by name and normal domain resolution mechanisms can find the service.
