@@ -18,8 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "78fcaa3d1997e592",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8S/ConfigMap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c50e8024c5c5bbe0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8S/Secret.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d449f235e67c4ad7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "K8S/Ingress.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "K8S/Volume.md",
+                "file": "K8S/Ingress.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "K8S/Volume.md",
+                "file": "K8S/Ingress.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "K8S/Volume.md"
+                "file": "K8S/Ingress.md"
               }
             }
           }
@@ -146,17 +183,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "541efefd84d3083b",
+  "active": "d449f235e67c4ad7",
   "lastOpenFiles": [
+    "K8S/Secret.md",
+    "K8S/ConfigMap.md",
+    "K8S/Volume.md",
     "K8S/Service.md",
     "K8S/Service Discovery.md",
     "K8S/Health Probes.md",
     "K8S/kube-proxy.md",
     "K8S/Permissions.md",
     "K8S/Operating System.md",
-    "K8S/etcd.md",
-    "K8S/Networking.md",
-    "networking/Containers.md",
-    "K8S/Admission Controller.md"
+    "K8S/etcd.md"
   ]
 }
