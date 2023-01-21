@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c3d5f9d311313648",
+        "id": "5b0afbda08ced009",
         "type": "tabs",
         "children": [
           {
-            "id": "cd2407e0e95342c3",
+            "id": "2931061b482fc2e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "K8S/Annotations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "23d689a105ca913d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "K8S/Quotas.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18a1492f21e4edeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "K8S/Job.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d174337cdbe31b8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "K8S/StatefulSet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0bcbcba587813775",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "K8S/Cluster Federation.md",
+                "file": "K8S/Webhook Mode.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "K8S/Cluster Federation.md",
+                "file": "K8S/Webhook Mode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "K8S/Cluster Federation.md",
+                "file": "K8S/Webhook Mode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "K8S/Cluster Federation.md"
+                "file": "K8S/Webhook Mode.md"
               }
             }
           }
@@ -195,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0bcbcba587813775",
+  "active": "2931061b482fc2e0",
   "lastOpenFiles": [
-    "K8S/StatefulSet.md",
-    "K8S/Job.md",
-    "K8S/Quotas.md",
-    "K8S/Autoscaling.md",
-    "K8S/Namespace.md",
     "K8S/Annotations.md",
-    "K8S/Volume.md",
-    "K8S/ConfigMap.md",
-    "K8S/Secret.md",
-    "K8S/Ingress.md"
+    "K8S/Quotas.md",
+    "K8S/Job.md",
+    "K8S/API Server.md",
+    "K8S/StatefulSet.md",
+    "K8S/Webhook Mode.md",
+    "K8S/Permissions.md",
+    "K8S/Cluster Federation.md",
+    "K8S/Autoscaling.md",
+    "K8S/Namespace.md"
   ]
 }

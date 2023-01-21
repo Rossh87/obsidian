@@ -1,0 +1,3 @@
+"Webhooks" are just `http`-based events.  One system sends a `POST` request to another system when an event occurs.
+
+Webhook authorization requires a `Config` object to be passed when the mode is enabled.  The config specifies a remote endpoint (must be `https`) and `TLS` info. When the [[API Server]] receives a request that requires authorization, it sends a `POST` request to the endpoint whose body is a JSON-encoded `SubjectAccessReview` object, containing details about the request.  The authorizer can either authorize the request, return a negative result that still allows other authorizers to potentially authorize the request, or deny the request outright, which short-circuits any other potential authorizers.
