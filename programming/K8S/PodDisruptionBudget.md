@@ -1,0 +1,5 @@
+[[Pod]]s removals fall into two categories: voluntary and involuntary.  Involuntary pod removals are due to things like hardware/VM failure, unplanned network partitions, or exceeding resource limites.  Voluntary removals occur due to planned administrative actions, [[Autoscaling]], node reconfiguration, etc.
+
+A `PodDisruptionBudget` limits the number of replicas of a given pod that can be voluntarily removed; or alternatively, guarantees a minimum fraction of the desired number of replicas will always be running, regardless of any voluntary removals.
+
+When managing [[Node]]s/pods, tools that use the eviction API should be used when possible, since this will respect any `PodDisruptionBudget`s applicable.  If a command like `kubectl drain` would reduce the number of pods in the cluster below the threshold specified in a `PodDisruptionBudget`, the command will block until the [[Deployment]] can create a replacement pod, and that pod is becomes available. 
