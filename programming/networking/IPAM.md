@@ -1,0 +1,1 @@
+IP address management tools/configuration deal with assigning, tracking, and releasing ip addresses on a network.  Networks may need to service thousands of devices on multiple subnets, which is impractical to manage by hand.  Particularly relevant in combination with DHCP and DNS services, where an IPAM tool can serve as a bridge between the two.
