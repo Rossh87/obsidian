@@ -7,7 +7,7 @@ Categories:
 
 Insights:
 1. Since robot can only move down or to the right, the number of unique paths to position \[row, col\]  is uniquePaths(row - 1, col) + uniquePaths(row, col - 1)
-2. We can use [[Search pruning]] to eliminate recursive branches by memoizing
+2. We can use [[Search Tree Pruning]] to eliminate recursive branches by memoizing
 3. Finally, because we traverse grid predictably, we only need to track a single row in our memo array.
 
 Notes:

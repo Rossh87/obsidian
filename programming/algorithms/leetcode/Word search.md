@@ -5,7 +5,7 @@ URL: https://leetcode.com/problems/word-search/
 Categories:
 1. [[Depth-first search]]
 2. [[Backtracking]]
-3. [[Search pruning]]
+3. [[Search Tree Pruning]]
 4. [[Flood fill]]
 
 Insights:
