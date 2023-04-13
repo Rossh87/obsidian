@@ -1,0 +1,1 @@
+Bridges the gap between [[kubelet]] and the [[Container Runtime]] of choice.  Allows `kubelet` to work with any CRI-compliant runtime. 

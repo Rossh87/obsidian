@@ -1,4 +1,4 @@
-- [ ] Bridges the gap between the [[Container Runtime]] and individual containers or [[Pod]]s.  A CNI is needed for K8s to work, but not specific to K8s.  It can be used with most popular container runtimes with or without K8s.
+Bridges the gap between the [[Container Runtime]] and individual containers or [[Pod]]s.  A CNI is needed for K8s to work, but not specific to K8s.  It can be used with most popular container runtimes with or without K8s.
 
 The interface provided by CNI-compliant container networking solutions allows the container runtime to be agnostic about the networking specifics of the host.  The container runtime communicates with the CNI via a small number of verbs (e.g. `add`, `del`), along with a JSON-encoded text file that includes details about the request.
 
