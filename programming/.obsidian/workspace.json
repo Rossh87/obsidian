@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e13d55be764d91fc",
+        "id": "a4aa80f640709059",
         "type": "tabs",
         "children": [
           {
-            "id": "b299441e31acb4d5",
+            "id": "1cb480875733b04e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bash/Hints.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fb0162788a1ecd7b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "python/Logging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aefeee212d6be7ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "debian/Cheat sheet.md",
+                "file": "Elastic/Null value.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cron",
+                "query": "nodeport",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "debian/Cheat sheet.md",
+                "file": "Elastic/Null value.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "debian/Cheat sheet.md",
+                "file": "Elastic/Null value.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,11 +133,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "debian/Cheat sheet.md"
+                "file": "Elastic/Null value.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -179,27 +155,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "aefeee212d6be7ae",
+  "active": "541efefd84d3083b",
   "lastOpenFiles": [
+    "Elastic/Mapping.md",
+    "Elastic/Null value.md",
+    "Elastic/REST API.md",
+    "runtime.md",
+    "Elastic/Runtime Fields.md",
+    "Elastic",
+    "K8S/Ingress.md",
+    "K8S/Service.md",
+    "networking/Network sockets.md",
+    "networking/Unix sockets.md",
+    "networking/UDP.md",
+    "networking/TCP.md",
+    "ElasticSearch/Overview.md",
+    "css/Container queries.md",
+    "ElasticSearch",
+    "css/Custom Properties (variables).md",
+    "css/Fluid typography.md",
+    "python/conda-lock.md",
+    "computing/Chip architecture.md",
+    "algorithms/leetcode/Untitled.md",
+    "python/Logging.md",
+    "bash/sed.md",
+    "networking/Containers.md",
     "bash/Hints.md",
     "debian/Cheat sheet.md",
     "debian",
-    "python/Logging.md",
     "python",
     "bash",
     "K8S/Secret.md",
     "K8S/ConfigMap.md",
-    "css/Selectors.md",
-    "K8S/Job.md",
-    "css/Media Queries.md",
-    "nextjs/Untitled.md",
-    "K8S/Control Plane Node.md",
-    "K8S/Container Runtime Interface (CRI).md",
-    "K8S/Container Network Interface (CNI).md",
-    "networking/Containers.md",
-    "algorithms/leetcode/Unique Paths.md",
-    "algorithms/Search Tree Pruning.md",
-    "algorithms/Backtracking.md",
-    "networking/IPAM.md"
+    "css/Selectors.md"
   ]
 }

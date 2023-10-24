@@ -5,4 +5,7 @@ A TCP segment includes the following structure.  Note that *both sides* of the c
 
 The sequence number and acknowledgment number, together with the ACK flag, allow the host and client to check the integrity of the information received and resend packets that may be lost in transmission (in this case, seq/ack numbers will be out-of-sync).  Transmission of every segment is a 2-way exchanges: sender sends the packet, and the receiver sends an `ack` message with its acknowledgement number updated.
 
-TCP connections are stateful, and can have a number of [different statuses](https://www.ibm.com/docs/en/zos-basic-skills?topic=layer-transmission-control-protocol-tcp).  These statuses can be used for fine-grained firewall control through [[iptables]]
+TCP connections are stateful, and can have a number of [different statuses](https://www.ibm.com/docs/en/zos-basic-skills?topic=layer-transmission-control-protocol-tcp).  These statuses can be used for fine-grained firewall control through [[iptables]].
+
+Summary:
+- TCP connections are stream-oriented: the protocol itself guarantees that data will be handed off in the order it was sent, and there are loss-prevention and error-correction mechanisms

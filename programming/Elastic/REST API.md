@@ -1,0 +1,1 @@
+Individual [Elastic APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-apis.html) expose their own endpoints. They generally follow the pattern: `<HTTP VERB> <INDEX NAME>/_<OBJECT TYPE>`, and pass parameters in a JSON payload.
