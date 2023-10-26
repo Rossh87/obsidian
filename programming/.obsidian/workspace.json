@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Elastic/Null value.md",
+                "file": "Elastic/Mapping.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Elastic/Null value.md",
+                "file": "Elastic/Mapping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Elastic/Null value.md",
+                "file": "Elastic/Mapping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Elastic/Null value.md"
+                "file": "Elastic/Mapping.md"
               }
             }
           }
@@ -155,10 +155,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "541efefd84d3083b",
+  "active": "1cb480875733b04e",
   "lastOpenFiles": [
-    "Elastic/Mapping.md",
+    "Elastic/Searching.md",
     "Elastic/Null value.md",
+    "Elastic/Mapping.md",
     "Elastic/REST API.md",
     "runtime.md",
     "Elastic/Runtime Fields.md",
@@ -186,7 +187,6 @@
     "python",
     "bash",
     "K8S/Secret.md",
-    "K8S/ConfigMap.md",
-    "css/Selectors.md"
+    "K8S/ConfigMap.md"
   ]
 }
