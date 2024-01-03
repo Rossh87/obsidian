@@ -1,0 +1,9 @@
+In the most literal terms possible, a 'vector' (in ML) is a sequence of numeric values--usually floats, and an 'embedding' of a text is a matrix of vectors, where each vector corresponds to a chunk of the text, e.g. one word.
+
+A vector is said to exist in a 'vector space'. In a 2-D vector space bounded by positive real numbers, the vectors space is the Cartesian grid from 0 => Infinity on the x-axis and 0 => infinity on the y-axis.
+
+The 'dimensionality' of an embedding model is just the length of the vectors it produces. Each value in the vector is one dimension. Each dimension represents some semantic aspect of the chunk that corresponds to the vector. NB that the value for a given dimension of a vector is based on some semantic aspect of the chunk *within its context in the text as a whole*. As a crude example, given a 1-dimension embedding model that encodes whether a word is a noun or verb, the embedding for the chunk *bread* in the text `Bread the fish and fry it` would be different than the embedding for the chunk `bread` in the text `Buy bread from the store.` The semantic meaning of a single dimension is theoretically knowable, but in practice is up to the generating model to determine and often too complex for humans to discern.
+
+In general, the dimensionality of an embedding model determines the degree of nuance it can capture. However, adding dimensions makes it more computationally expensive to generate and use the resulting embeddings, and requires more and higher-quality training data to avoid overfitting.
+
+Different [embedding methods](https://labelbox.com/blog/how-vector-similarity-search-works/) can be better for certain tasks, and/or come with their own interoperability constraints. For example, Elastic Search ML is currently only compatible with BERT-based embedding models.

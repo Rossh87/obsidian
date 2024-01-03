@@ -1,0 +1,1 @@
+Facebook AI Similarity Search is a library containing tools for efficient similarity search and clustering of [dense vectors]. Implemented in C++ w/ Python bindings. Very configurable, can do K nearest neighbors, sacrifice accuracy for speed, etc.
