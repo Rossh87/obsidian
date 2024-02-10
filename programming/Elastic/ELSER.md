@@ -1,0 +1,4 @@
+Elastic Learned Sparse EncodeR is a special embedding/retrieval model specifically for Elastic. Elastic query features like [KNN search](https://www.elastic.co/guide/en/elasticsearch/reference/current/knn-search.html) require [[Dense Vectors]] for the documents to be searched, ELSER uses [[Sparse Vectors]].
+
+## Strategy
+Texts are expanded into collections of terms that the ELSER model has been trained to recognize as likely to co-occur, and the terms are assigned weights. The same expansion is performed on search queries. The indexing results are stored in a special 'Rank Features' field type that stores the score of each record for each feature of the generated vectors. Given a query that scores highly for a particular feature, the highest-ranked search results will be those that also score highly for those features.

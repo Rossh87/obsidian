@@ -1,0 +1,12 @@
+Designing for system recoverability is related to [[High Availability]]: if a critical system component fails, the system will be unavailable for the time it takes to recover. It may also be unavailable or less-available if the recovered state is suboptimal compared to the state before the failure.
+
+2 important metrics:
+1. Recovery Time Objective (RTO): how much time passes before a recovery strategy is fully in-effect. The system is unavailable or partially unavailable until then.
+2. Recovery Point Objective (RPO): How much data loss does the recovery strategy incur when a failure happens? In otherwords, what is the 'diff' between the system state at the moment of failure and the system state when the recovery has been fully implemented.
+
+Different recovery strategies can meet different RPO and RTO. Some examples:
+
+1. Backup and restore: simply taking snapshots of data and/or system state at regular intervals and storing it somewhere safe (cloud, different zone, etc.). RTO is variable, it might be very short for small amounts of data. RPO is based on how frequently snapshots are taken.
+2. Pilot light: a second system is kept deactivated but updated at regular intervals. It will be activated in case of a failure. An example might be a DNS service that consists of a storage mechanism and a server: storage state might be replicated to a secondary storage mechanism (e.g. cloud database) that's connected to a second server. The second server is not running, i.e. not serving requests during normal operation and possibly not running at all, but if the primary fails traffic is rerouted to the backup server. RTO may be a few minutes to several hours. RPO is based on how ofter the primary storage copies its data to secondary storage.
+3. Warm standby: a semi-active environment is maintained alongside the primary environment. The failover ('warm') environment can immediately start serving requests if the primary fails. If the warm system is run in an auto-scalable environment, it can be kept at minimum scale to reduce cost until it is needed.
+4. Multi-environment/hot-site: a complete duplicate environment is run at all times and kept in-sync. This will obviously have the best RTO and RPO, and cost the most.

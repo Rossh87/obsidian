@@ -1,0 +1,3 @@
+Enterprise search is an Elastic add-on: it adds some APIs based on the base Elastic stack that are meant to add convenience for business users. For example, 'connectors' help automate the process of getting data out of databases or content sources and into Elastic. Enterprise Search is required for a number of other features, e.g. AppSearch and Elastic Web Crawler.
+
+Enterprise Search is a separate server instance.

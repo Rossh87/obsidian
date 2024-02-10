@@ -40,5 +40,21 @@ There are a large number of [possible field types](https://www.elastic.co/guide/
 - `numeric` types: different sizes and precisions are available. Optimized for `range` queries.
 - `spatial` types: usual suspects, geojson points and shapes etc.
 - `object` type: type of a JSON object structure. Not usually necessary to explicitly map to this type, as it is inferred by the presence of sub-properties in the mapping declaration. When indexing records with a large number of different, arbitrary fields and subfields, use `flattened` type to store the entire object as a single field. This prevents a mapping explosion from a dynamic mapping being created for each field/subfield, but each leaf value is indexed as a string keyword without any analysis of number/date detection, which limits options for querying. However, it is still possible to specify subfields.
+- `nested` type: Elastic has no concept of inner hierarchies: all inner fields are flattened into a simple list of field names and values. e.g:
+```python
+{
+ "group": "fans":
+ "names": {"first": "alice", "last":"white"}, {"first": "jon", "last":"smith"}
+}
+```
+will become:
+```python
+{
+ "group": "fans",
+ "names.first": ["alice", "jon"],
+ "names.last": ["white", "smith"],
+}
+```
+To index arrays of objects and maintain the relationship between specific field values and specific objects, use the `nested` field type. Internally, this creates a separate Lucene document for each object in the array, plus a parent document. At query time the parent and children can be stitched back together if desired. This field type is expensive to index and query, and should only be used if it is important to query for matches on specific subdocuments.
 
 Note there is no array type; any field can have 0 or more values, but all must be of the same field type. If a field has more than 1 value, queries will match any of the values.

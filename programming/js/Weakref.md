@@ -1,0 +1,3 @@
+Same concept as [[Weakset]] and [[Weakmap]] : a Weakref doesn't prevent its referent from being garbage collected.
+
+One example usage is registering a side-effect that should only run for the lifetime of the referent, e.g. a timer that ticks for as long as some other object is around, but doesn't prevent it from being garbage collected. A more realistic use-case might be some kind of heartbeat side-effect.

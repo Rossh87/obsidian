@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7d29c56a44c033ca",
+        "id": "492811e5b37ee574",
         "type": "tabs",
         "children": [
           {
-            "id": "ca8f8df77ec2aadf",
+            "id": "22e57f55be6fbde1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ml/Vector Search.md",
+                "file": "system design/High Availability.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "8acbefef302062fe",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.3"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ml/Vector Search.md",
+                "file": "system design/High Availability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ml/Vector Search.md",
+                "file": "system design/High Availability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ml/Vector Search.md"
+                "file": "system design/High Availability.md"
               }
             }
           }
@@ -165,38 +154,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8acbefef302062fe",
+  "active": "22e57f55be6fbde1",
   "lastOpenFiles": [
-    "ml/Feature.md",
-    "ml/Vectors (embeddings).md",
-    "ml/Vector Search.md",
-    "ml/FAISS.md",
-    "ml/Sparse Vectors.md",
-    "ml/Dense Vectors.md",
+    "system design/Disaster Recovery.md",
+    "coding patterns/SOLID.md",
+    "system design",
+    "system design/High Availability.md",
+    "js/Weakref.md",
+    "js/Weakset.md",
+    "js/Weakmap.md",
+    "algorithms/Hashset or map.md",
+    "js",
+    "coding patterns/State.md",
+    "coding patterns/Visitor.md",
+    "coding patterns/Strategy.md",
+    "python/conda-lock.md",
+    "python/Logging.md",
+    "coding patterns/Proxy.md",
+    "coding patterns/Modules.md",
+    "coding patterns/Factory pattern.md",
+    "coding patterns/Builder.md",
+    "python/Module resolution.md",
+    "Linear Algebra/Linear function.md",
+    "Linear Algebra/Coefficient.md",
+    "Linear Algebra/Polynomial.md",
+    "Linear Algebra/Matrix.md",
     "Linear Algebra/Vector.md",
-    "ml",
-    "docker/Configuring.md",
-    "Linear Algebra",
-    "networking/Containers.md",
-    "docker",
-    "python/Classes and Metaclasses.md",
-    "Elastic/Indexing.md",
-    "Elastic/Architecture.md",
-    "Elastic/Mapping.md",
+    "ml/Vector Search.md",
+    "ml/Vectors (embeddings).md",
     "Elastic/Searching.md",
-    "Elastic/Null value.md",
-    "Elastic/REST API.md",
-    "runtime.md",
-    "Elastic/Runtime Fields.md",
+    "ml",
+    "Linear Algebra",
+    "docker",
     "Elastic",
-    "K8S/Ingress.md",
-    "K8S/Service.md",
-    "networking/Network sockets.md",
-    "networking/Unix sockets.md",
-    "networking/UDP.md",
-    "networking/TCP.md",
-    "ElasticSearch/Overview.md",
-    "css/Container queries.md",
     "ElasticSearch",
     "debian",
     "python",

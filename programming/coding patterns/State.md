@@ -1,0 +1,5 @@
+Similar to [[Strategy]], mixed with a finite-state machine. If a class always has the same interface, but methods behave differently based on some current state, each method may be bloated with fragile 'check state' conditionals to determine the correct behavior. 
+
+As an alternative, create different classes with a common interface for each possible system state. A parent Context object keeps a reference to the current state object, and interacts with it through its methods. When a state transition is needed, the Context object creates replaces its existing state reference to with an instance of the next state.
+
+Both the Context and the state classes may trigger state transitions. This is a key difference with the strategy pattern: states may be aware of one another, strategies are usually totally independent.

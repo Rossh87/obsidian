@@ -1,0 +1,1 @@
+In linear algebra, a linear function is a mapping function between vector spaces such that vector addition and scalar multiplication are preserved.

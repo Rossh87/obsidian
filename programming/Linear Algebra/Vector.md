@@ -1,3 +1,5 @@
+https://www.grc.nasa.gov/www/k-12/Numbers/Math/documents/Tensors_TM2002211716.pdf
+
 A Vector has *both* a magnitude and a direction. A velocity specified as '5 mph due east', is a vector: '5mph' is the magnitude, 'east' is the direction. Contrast with a 'scalar', which is a single discrete value, or magnitude.
 
 A 2D vector can be represented on a simple coordinate plane. We might take the length of the vector to represent its magnitude, and the axis along which it travels to represent direction (N, S, E, W). In that case the example above would look like:
@@ -37,6 +39,9 @@ The total magnitude of a vector is derived from its constituent magnitudes. Cons
 The total magnitude is the length of the vector, which in this case is the hypotenuse of a 3,4,5 right triangle, so we know that the combined magnitude is 5.
 
 2- and 3-dimensional vectors are easiest to visualize, but the dimensionality of a vector space is in principle unlimited.
+
+## Unit Vectors
+A 'unit vector' is a special kind of vector that defines the space in which other vectors operate. A unit vector has a magnitude of exactly 1 and is used to specify direction. For example, in the list of directions '2 blocks east, 1 block north, and 2 floors up', {2,1,2} are scalars, and {east,north,up} can be generalized as (e.g.)  unit vectors _i_, _j_, and _k_, each corresponding to one dimension in a 3-dimensional space.
 
 ## Dimensionality
 The 'coordinate space' above can be denoted as $\mathbb{R}^2$, where $\mathbb{R}$ symbolizes the set of all real numbers. Intuitively the area of the Cartesian plane whose y-values are every value in $\mathbb{R}$ and whose x-values are every value in $\mathbb{R}$ is $\mathbb{R}^2$.  So the 'two-dimensional real coordinate space' is every possible real-valued 2-tuple. This is extensible to `n` dimensions, so the n-dimensional real coordinate space is written $\mathbb{R}^n$. 
