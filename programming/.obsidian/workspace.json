@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "492811e5b37ee574",
+        "id": "0504c2b1fffc00ba",
         "type": "tabs",
         "children": [
           {
-            "id": "22e57f55be6fbde1",
+            "id": "3f35707df0702a4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system design/High Availability.md",
+                "file": "networking/Routing.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "system design/High Availability.md",
+                "file": "networking/Routing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "system design/High Availability.md",
+                "file": "networking/Routing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "system design/High Availability.md"
+                "file": "networking/Routing.md"
               }
             }
           }
@@ -154,12 +154,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "22e57f55be6fbde1",
+  "active": "3f35707df0702a4a",
   "lastOpenFiles": [
+    "networking/Routing.md",
+    "python/Module resolution.md",
+    "python/Logging.md",
     "system design/Disaster Recovery.md",
+    "system design/High Availability.md",
     "coding patterns/SOLID.md",
     "system design",
-    "system design/High Availability.md",
     "js/Weakref.md",
     "js/Weakset.md",
     "js/Weakmap.md",
@@ -169,12 +172,10 @@
     "coding patterns/Visitor.md",
     "coding patterns/Strategy.md",
     "python/conda-lock.md",
-    "python/Logging.md",
     "coding patterns/Proxy.md",
     "coding patterns/Modules.md",
     "coding patterns/Factory pattern.md",
     "coding patterns/Builder.md",
-    "python/Module resolution.md",
     "Linear Algebra/Linear function.md",
     "Linear Algebra/Coefficient.md",
     "Linear Algebra/Polynomial.md",
